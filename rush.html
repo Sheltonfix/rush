@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logisco - Cargo Transport Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-truck"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Rush transportes"
+                    style="max-height: 100%; width: auto;"> Rush</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#services">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contato</a></li>
+                </ul>
+                <button class="btn btn-quote" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                    Solicitar Cotação
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-right">
+                    <h1>Bem-vindo à Logisco<br>Cargo Transport Services</h1>
+                    <p>Oferecemos soluções completas de transporte e logística com segurança, eficiência e pontualidade.
+                        Sua carga em boas mãos, sempre.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-quote btn-lg">Começar Agora</button>
+                        <button class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-play"></i> Ver Vídeo
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="hero-truck">
+
+                        <img src="img/principal.png" alt="Rush transportes" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row hero-stats" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-12 text-md-end">
+                    <img src="img/parcerias.png" alt="Parcerias" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Quote Modal -->
+        <div class="modal fade" id="quoteModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Solicitar Cotação Rápida</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="modalQuoteForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nome</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Serviço</label>
+                                    <select class="form-control" required>
+                                        <option value="">Selecione o serviço</option>
+                                        <option value="expressa">Entrega Expressa</option>
+                                        <option value="armazenagem">Armazenagem</option>
+                                        <option value="maritimo">Transporte Marítimo</option>
+                                        <option value="aereo">Carga Aérea</option>
+                                        <option value="local">Distribuição Local</option>
+                                        <option value="refrigerada">Carga Refrigerada</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensagem</label>
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Descreva suas necessidades..."></textarea>
+                            </div>
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="submit" form="modalQuoteForm" class="btn btn-quote">Enviar
+                                    Cotação</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="row text-center mb-5" data-aos="fade-up">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold mb-4">Ampla Variedade de Serviços Logísticos</h2>
+                    <p class="lead">Simplificamos o processo de desembaraço aduaneiro. Com a nossa experiência e
+                        tecnologia,
+                        garantimos um processo rápido e dinâmico de modo a garantir a sua satisfação.</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <h5 class="card-title">Carga Aerea</h5>
+                        <span>Importação/ Esportação</span>
+
+                        <img src="img/card1.png" alt="serviços" class="card-img-top" style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-text">Transporte rápido e seguro por via aérea, ideal para envios urgentes e
+                                de alto valor.</p>
+                            <a href="#" class="btn btn-primary">Solicitar Cotação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <h5 class="card-title">Carga Maritima</h5>
+                        <span>Importação/ Esportação</span>
+                        <img src="img/card2.png" alt="serviços" class="card-img-top" style="width: 18rem;">
+                        <div class="card-body">
+
+                            <p class="card-text">Solução económica e fiável para grandes volumes, com cobertura global
+                                através de parcerias estratégicas.</p>
+                            <a href="#" class="btn btn-primary">Solicitar Cotação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <h5 class="card-title">Recolhas Internacionais e Domésticas</h5>
+
+                        <img src="img/card3.png" alt="serviços" class="card-img-top" style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-text">Serviço eficiente de recolha porta-a-porta, tanto a nível nacional como
+                                internacional, adaptado às necessidades do cliente.</p>
+                            <a href="#" class="btn btn-primary">Solicitar Cotação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <h5 class="card-title">Soluções em Logística</h5>
+                        <img src="img/card4.png" alt="serviços" class="card-img-top"
+                            style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-text">Planeamento, gestão e execução de operações logísticas personalizadas,
+                                desde o armazenamento até à entrega final.</p>
+                            <a href="#" class="btn btn-primary">Solicitar Cotação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <h5 class="card-title">Transporte de Carga</h5>
+                        <img src="img/card5.png" alt="serviços" class="card-img-top"
+                            style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-text">Transporte rápido e seguro por via aérea, ideal para envios urgentes e
+                                de
+                                alto
+                                valor.</p>
+                            <a href="#" class="btn btn-primary">Solicitar Cotação</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <h5 class="card-title">Animais Vivos</h5>
+
+                        <img src="img/card6.png" alt="serviços" class="card-img-top"
+                            style="width: 18rem;">
+                        <div class="card-body">
+                            <p class="card-text">Serviços especializados e regulamentados, assegurando o bem-estar e
+                                segurança dos animais durante todo o trajeto.</p>
+                            <a href="#" class="btn btn-primary">Solicitar Cotação</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="display-5 fw-bold mb-4">Por que somos considerados os melhores no negócio</h2>
+                    <p class="lead mb-4">Com anos de experiência no mercado, oferecemos soluções personalizadas que
+                        garantem
+                        a segurança e pontualidade de suas entregas.</p>
+
+                    <ul class="feature-list">
+                        <li><i class="fas fa-shield-alt"></i> Seguro completo para todas as cargas</li>
+                        <li><i class="fas fa-clock"></i> Pontualidade garantida</li>
+                        <li><i class="fas fa-map-marked-alt"></i> Rastreamento em tempo real</li>
+                        <li><i class="fas fa-users"></i> Equipe especializada</li>
+                        <li><i class="fas fa-medal"></i> Certificações internacionais</li>
+                        <li><i class="fas fa-headset"></i> Suporte 24/7</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded-3">
+                                <i class="fas fa-trophy text-warning" style="font-size: 3rem;"></i>
+                                <h4 class="mt-3">+9 Anos</h4>
+                                <p>de Experiência</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded-3">
+                                <i class="fas fa-globe-americas text-dark" style="font-size: 3rem;"></i>
+                                <h4 class="mt-3">Mundial</h4>
+                                <p>Cobertura Global</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded-3">
+                                <i class="fas fa-star text-warning" style="font-size: 3rem;"></i>
+                                <h4 class="mt-3">5 Estrelas</h4>
+                                <p>Avaliação Média</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-light rounded-3">
+                                <i class="fas fa-handshake text-success" style="font-size: 3rem;"></i>
+                                <h4 class="mt-3">100%</h4>
+                                <p>Comprometimento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <!-- Quote Section -->
+    <section class="quote-section" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="quote-form">
+                        <h2 class="text-center mb-4">Solicite uma Cotação</h2>
+                        <p class="text-center text-muted mb-4">Preencha o formulário e receba uma proposta personalizada
+                            em
+                            até 24 horas</p>
+
+                        <form id="quoteForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Nome Completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Telefone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control" required>
+                                        <option value="">Tipo de Serviço</option>
+                                        <option value="expressa">Entrega Expressa</option>
+                                        <option value="armazenagem">Armazenagem</option>
+                                        <option value="maritimo">Transporte Marítimo</option>
+                                        <option value="aereo">Carga Aérea</option>
+                                        <option value="local">Distribuição Local</option>
+                                        <option value="refrigerada">Carga Refrigerada</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Origem" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Destino" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="4"
+                                placeholder="Descrição da carga e observações"></textarea>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-quote btn-lg px-5">
+                                    <i class="fas fa-paper-plane"></i> Enviar Cotação
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-truck"></i> Logisco</h5>
+                    <p>Sua solução completa em transporte e logística. Conectando destinos, entregando confiança.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Serviços</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Entrega Expressa</a></li>
+                        <li><a href="#">Armazenagem</a></li>
+                        <li><a href="#">Transporte Marítimo</a></li>
+                        <li><a href="#">Carga Aérea</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Empresa</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Suporte</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Rastreamento</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Contato</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i> (+258) 87 844 2888 | 84 96 50 800</li>
+                        <li><i class="fas fa-envelope"></i>info@rushlogistics.co.mz</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Maputo, Moçambique</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Rush. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
